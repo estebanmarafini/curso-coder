@@ -13,12 +13,26 @@ header :first-child{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    animation-name: logo;
     
+    
+}
+header :first-child :hover{
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-delay: 2s
+    animation-iteration-count: 4;
+}
+
+@keyframes logo {
+    0% { transporm:translate (3px 3px) ;}
+    50% { transform: rotate(20deg) ;}
+    100% {transform: scale(2, 3);}
 }
  
 header :first-child :last-child{
     height: 75%;
-    
+    color: black;
 }
 
 header :last-child ul {
@@ -29,7 +43,7 @@ header :last-child ul {
     
     box-sizing: border-box;
 
-    
+   
 
 }
 
@@ -179,7 +193,7 @@ form{
 }
 
 label{ 
-    color: yellow;
+    color: black;
 }
 
 

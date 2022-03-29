@@ -1,0 +1,133 @@
+Heramientas
+Google fonts: tipografias
+color.adobe.com
+sans serif (tipografia principal)
+behance.net: pagina para ver diseños de paginas web
+awwwards.com: pagina para ver diseños de paginas web
+figma.com: pagina para hacer un diseño de una pagina web
+lorem: texto de relleno
+https://git-scm.com/downloads
+	git init
+	git add "nombre carpeta html#
+	
+
+
+Etiqutas:
+Header: encabezado
+Main: principal
+Footer: pie de pagina
+nav: sección
+P:parrafo
+spam:sirve para poner una palabra al lado de otra, pero en el codigo van con salto de linea
+ul(unordened list): lista desordenada
+ol(ordened list): lista ordenada
+li: elemento de lista. va dentro de ul/ol
+a: link o hipervinculo
+img: imagen. 
+h1/h2/h3/h4: titulo (la numeración es el orden de relevancia)
+form: Formulario
+imput: donde el usuario puede escribir (se debe elegir el tipo de dato, ej texto, fecha check, email,submit/boton, etc)
+label: nombre de etiqueta
+textarea: es como el imput pero es un area mas grande, par que el usuario escriba.
+video: para poner un video. (https://www.w3schools.com/html/html_youtube.asp    es una pagina para poner videos de youtube)
+display: grid; visualizar los elementos ordenados en tabla
+grid-template-columns; 1fr 1fr 1fr / repeat(3, 1fr)
+grid-template-row;
+grid-auto-row: px; cantidad de filas necesarias y que todas tengan el mismo tamaño que se pone en el valor.
+grid-row-start/end: en que fila arranca/ termina el objeto
+grid-row: 2 span; desde donde arranca el elemento ocupa dos filas.
+grid-area: 1/2/2/3; comienza en fila 1 y columna 2 y termina en fila 2 y  columna 3.
+grid-gap: poner separadores en entre objetos dentro de grid
+object-fit: googlear
+
+
+
+Atributos:
+href: Texto clicleable (va dentro de hipervinculo(a)
+src: atributo de img: (nombre del archivo de la imagen "ej .jpg")
+alt: atributo de img: (texto alternativo de la imgaen por si la misma no carga)
+placeholder: va dentro de umput(leyenda para el ususario ej "introduzca su nombre aqui")
+name: va dentro de imput (Nombre del imput)
+controls:va en video se habilitan los controles del video como pausar, volumen ,etc.
+auoplay: va en video, cuando se entra a la pagina se inicia el video automaticamente.
+muted: el video arranca muteado.
+class: va dentro de la etiqueta de apertura y se escribe el nombre de la clase
+
+
+
+CSS
+Clase: se crea con un punto(.) y el nombre de la clase. luego le asigno atributos como el color y la puedo usar en cualquier etiqueta
+dentro de la misma.
+list-style: 
+font-weight: fuente
+font-style:
+font-family: tipografia
+font-size: tamaño de letra
+background-color: color del fondo
+opacity: 0.3; es la transprencia a un 30%
+background-image: poner una imagen de fondo
+ackground-repeat (como valor se pone repeat/no repeat) es para que se repita una foto a lo largo o ancho de la pagina.
+	tambien se puede usar la propiedad 
+https://fonts.google.com/ pagina para encontrar tipografias
+https://www.freecodecamp.org/espanol/news/todas-las-propiedades-background-de-css-explicadas-con-codigo-de-ejemplo/
+	pagina de propiedades de background (fondo)
+https://www.coderhouse.com/proyectos proyectos de coder años anteriores
+https://www.cssgradient.io (para hacer degrades de colores). puede ser linar (de izquierda a derecha) o radial(desde el centro)
+	
+		
+
+https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-type_all pagina para ver estilos de css
+text-decoration
+Buscar color picker en google y se abre una paleta de color, luego copiar y pegar el codigo o poner rgb(red, green, blue) la cantidad de cada color
+font-weight
+unidades de medidas en css:
+	.px(pixels)
+	.Rem
+	.Porcentaje
+	.Viewsport
+atributo border: es el borde del elemento, lleva 3 valores(tamaño en pixeles, grosor y color)
+text-align: alineacion de texto (lleva como valor ej center)
+overflow:googlear
+box-sizing: borde-box (propiedad para ordenar que el hancho selccionado ya incluya el contenido, el padding y border juntos)
+border-radius: valor en p(redondea el borde)
+display:(valor inline) propiedad de css que permite poner un elemento al lado del otro.
+margin: establecer margenes
+	margin-top
+	margin-right
+	margin-left
+	margin-botton
+	margin: primer valor top, segundo botton, tercero left, cuarto right
+bordes:
+
+border-botton-top-left-right (valores van tipo de borde, tamaño, color)
+	.solid:grueso
+	.dotted: punteado
+	.dashed: lineas
+	.double: doble
+	.groove: fino
+@media screen and (max-width:768 px): dentro de esto hago los cambios para hacer que se vea como celular.
+bacgrowund: linear-gradient(90deg, red, blue); pongo primero los grados, luego desde que color a que color va el degrades
+ 	    radial gradient
+@keyframes "nombre de la animacion"{
+	0%{background-color: blue;} al inicio mi fondo es azul
+	50% {background-color:red;} a la mitad del tiempo de la animacion mi fondo es rojo
+	100%{background-color: yellow;} al final mi fondo es azul
+}
+
+animation-name: "nombre que defini en keyframe";
+animation-duration: 10s; 10 segundos de animacion
+animation-timing-function: ease;
+animation-iteration-count: 4; cantidad de veces q se repite la animacion por ej 4 veces.
+animation-delay: 2s;
+
+box-shadow:3px(offset-x), 3px(offset-y), 6px(blur-radius:cuanto mas difuminado), 3px(spread-radius: grosor) blue(color de sombra) ; porpiedad para dar sombras.
+transform: rotate(30deg); propiedad para rotar el elemento.
+transfor: escale(2 (alto), 1.2(ancho)); propiedad para aumentar proporcionalmente el tamaño, ej 1 es 100%.
+transfor: translate(-10px (para abajo), 10px(para la derecha); propiedad para mover el bojeto.
+transfor: skew ( es como rotate per gira de ambos lados. lleva grados)
+transition:all 2s linear;  transisionar ( tiempo en q hace la animacion). Va en el elemnto principal(no en el evento)
+transition:all 2s ease-in/out; el desplazamiento es lento/rapido y despues acelera/desacelera
+
+	pseudo clases:
+		:hover (cuando le paso el mouse por arriba)
+		:focus (cunso se le hce focus)
